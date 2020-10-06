@@ -72,22 +72,17 @@ namespace InterfaceExercise
                 Year = 2010
             };
 
-            List<IVehicle> vehicles = new List<IVehicle>();
+            myCar.DisplayGeneralInformation();
+            myCar.DisplaySpecificInformation();
+            myCar.DisplayCompanyInformation();
 
-            vehicles.Add(myCar);
-            vehicles.Add(myTruck);
-            vehicles.Add(wifeSUV);
-
-            foreach (var item in vehicles)
-            {
-                Console.WriteLine("General Information");
-                Console.WriteLine($"Make:{item.Make}");
-                Console.WriteLine($"Model:{item.Model}");
-                Console.WriteLine($"Year:{item.Year}");
-                Console.WriteLine($"Color:{item.Color}");
-                Console.WriteLine("----------------------");
-            }
-
+            myTruck.DisplayGeneralInformation();
+            myTruck.DisplaySpecificInformation();
+            myTruck.DisplayCompanyInformation();
+            
+            wifeSUV.DisplayGeneralInformation();
+            wifeSUV.DisplaySpecificInformation();
+            wifeSUV.DisplayCompanyInformation();
 
         }
     }
